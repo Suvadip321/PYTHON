@@ -5,5 +5,3 @@ def write_data(file_path, records):
     with open(file_path, "w") as file:
         for record in records:
             file.write(record + "\n")
-
-
