@@ -1,7 +1,10 @@
-# IDENTITY OPERATORS
 """
+LESSON: Identity Operators (is, is not)
+---------------------------------------
 'is'      -> checks if two objects have the SAME memory location (id)
 'is not'  -> checks if two objects have DIFFERENT memory locations
+
+Key difference: == checks VALUE equality, 'is' checks IDENTITY (same object).
 """
 
 # Example 1: Numbers (small integers are cached in Python)
@@ -32,3 +35,4 @@ print(list1 is list2)   # False (different memory locations)
 val = None
 print(val is None)         # True (recommended way to check None)
 print(val is not None)     # False
+

@@ -1,47 +1,42 @@
-# VARIABLES
 """
+LESSON: Variables
+─────────────────
 A variable is a name that stores a value in memory.
 Python is dynamically typed -> no need to declare type explicitly.
 """
 
-x = 10            # integer
+x = 10            # int
 y = 3.14          # float
-name = "Python"   # string
-is_active = True  # boolean
+z = 5j            # complex
+name = "Python"   # str
+is_active = True  # bool
+data = None       # NoneType
 
-print(x, y, name, is_active)
-# Output: 10 3.14 Python True
+print(x, y, z, name, is_active, data)
+# Output: 10 3.14 5j Python True None
 
-
-# REASSIGNING VARIABLES
-"""
-Variables can be reassigned with new values (even of a different type).
-"""
-x = 50
-print("x =", x)  
-# Output: x = 50
-
-x = "Now This is a string!"
-print("x =", x)  
-# Output: x = Now This is a string!
+# Dynamic typing — a variable can change type
+x = "now I'm a string"
+print(x, type(x))
+# Output: now I'm a string <class 'str'>
 
 
-# MULTIPLE ASSIGNMENT
-"""Assigning multiple values to multiple variables in one line"""
+# Assigning multiple values to multiple variables in one line
 a, b, c = 1, 2, 3
-print(a, b, c)  
+print(a, b, c)
 # Output: 1 2 3
 
-"""Assigning the same value to multiple variables"""
+# Assigning the same value to multiple variables
 p = q = r = 0
-print(p, q, r)  
+print(p, q, r)
 # Output: 0 0 0
 
 
 # VARIABLE NAMING RULES
 """
-Cannot start with a number
-Can contain letters, numbers, underscores
-Case-sensitive (age, Age, AGE are all different)
-Keywords (like for, if, while) cannot be used as variable names
+- Cannot start with a number
+- Can contain letters, numbers, underscores
+- Case-sensitive (age, Age, AGE are all different)
+- Keywords (like for, if, while) cannot be used as variable names
 """
+

@@ -1,63 +1,48 @@
+"""
+LESSON: Data Types
+──────────────────
+A datatype defines the type of value stored in a variable.
+
+Python built-in scalar types:
+    int, float, complex, str, bool, NoneType, bytes
+Use type() to check, isinstance() to verify.
+"""
+
 # INTEGER (int)
 age = 20
 print("Age:", age, "| Type:", type(age))
-print("Memory Address (id):", id(age))
-print("Is age an int?", isinstance(age, int))
-# Output:
-# Age: 20 | Type: <class 'int'>
-# Memory Address (id): <some unique number>
-# Is age an int? True
-
+# Output: Age: 20 | Type: <class 'int'>
 
 # FLOAT (float)
 pi = 3.14159
 print("Pi:", pi, "| Type:", type(pi))
-print("Memory Address (id):", id(pi))
-print("Is pi a float?", isinstance(pi, float))
-# Output:
-# Pi: 3.14159 | Type: <class 'float'>
-# Memory Address (id): <some unique number>
-# Is pi a float? True
+# Output: Pi: 3.14159 | Type: <class 'float'>
 
+# COMPLEX (complex)
+x = 7j
+print("x:", x, "| Type:", type(x))
+# Output: x: 7j | Type: <class 'complex'>
 
 # STRING (str)
 language = "Python"
 print("Language:", language, "| Type:", type(language))
-print("Memory Address (id):", id(language))
-print("Is language a str?", isinstance(language, str))
-# Output:
-# Language: Python | Type: <class 'str'>
-# Memory Address (id): <some unique number>
-# Is language a str? True
-
+# Output: Language: Python | Type: <class 'str'>
 
 # BOOLEAN (bool) -> True / False
 is_student = True
 print("is_student:", is_student, "| Type:", type(is_student))
-print("Memory Address (id):", id(is_student))
-print("Is is_student a bool?", isinstance(is_student, bool))
-# Output:
-# is_student: True | Type: <class 'bool'>
-# Memory Address (id): <some unique number>
-# Is is_student a bool? True
+# Output: is_student: True | Type: <class 'bool'>
 
-
-# NONE TYPE (None)
+# NONE TYPE (None) — represents absence of value
 data = None
 print("data:", data, "| Type:", type(data))
-print("Memory Address (id):", id(data))
-print("Is data NoneType?", isinstance(data, type(None)))
-# Output:
-# data: None | Type: <class 'NoneType'>
-# Memory Address (id): <some unique number>
-# Is data NoneType? True
+# Output: data: None | Type: <class 'NoneType'>
 
-# Complex
-x = 7j
-print("x:", x, "| Type:", type(x))
-print("Memory Address (id):", id(x))
-print("Is x a complex number?", isinstance(x, complex))
-# Output
-# x: 7j | Type: <class 'complex'>
-# Memory Address (id): <some unique number>
-# Is x a complex number? True
+# isinstance() — check if a value is of a specific type
+print("\nisinstance checks:")
+print(isinstance(age, int))           # True
+
+# id() — memory address of an object
+print("\nMemory address of age:", id(age))
+# Output: <some unique number>
+

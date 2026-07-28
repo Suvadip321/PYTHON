@@ -1,25 +1,22 @@
-# ARITHMETIC OPERATORS---
+"""
+LESSON: Arithmetic Operators
+─────────────────────────────
++   Addition
+-   Subtraction
+*   Multiplication
+/   Division (returns float)
+//  Floor Division (truncates decimal)
+%   Modulus (remainder)
+**  Exponent (power)
+"""
 
 a = 15
 b = 4
 
-addition = a + b
-print(addition)
-
-subtraction = a - b
-print(subtraction)
-
-multiplication = a * b
-print(multiplication)
-
-division = a / b
-print(division)
-
-floor_division = a // b
-print(floor_division)
-
-modulus = a % b
-print(modulus)
-
-power = a**b
-print(power)
+print("a + b  =", a + b)    # 19
+print("a - b  =", a - b)    # 11
+print("a * b  =", a * b)    # 60
+print("a / b  =", a / b)    # 3.75
+print("a // b =", a // b)   # 3
+print("a % b  =", a % b)    # 3
+print("a ** b =", a ** b)   # 50625

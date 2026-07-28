@@ -1,3 +1,11 @@
+"""
+LESSON: Type Casting
+--------------------
+Converting one data type to another.
+Implicit  = Python does it automatically (type promotion).
+Explicit  = You do it manually using int(), float(), str(), bool(), etc.
+"""
+
 # IMPLICIT TYPE CASTING
 """
 Python automatically converts smaller data type into a larger one (type promotion).
@@ -40,5 +48,14 @@ print(int(True), int(False))
 # Output: 1 0
 
 # Int to boolean
-print(bool(0), bool(1))
-# Output: False True
+print(bool(0), bool(1), bool(-5))
+# Output: False True True
+
+
+# COLLECTION CASTING
+print("\nCollection casting:")
+print(list("hello"))          # ['h', 'e', 'l', 'l', 'o']
+print(list(range(5)))         # [0, 1, 2, 3, 4]
+print(tuple([1, 2, 3]))      # (1, 2, 3)
+print(set([1, 2, 2, 3]))     # {1, 2, 3}
+
